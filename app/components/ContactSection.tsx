@@ -64,7 +64,7 @@ export default function ContactSection() {
 									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
 								>
 									<div className="p-2 bg-gray-700/50 rounded-lg group-hover:bg-gray-600/50 transition-colors">
-										<svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+										<svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 302.7 302.7">
 											<path d="M120.5 271.7C9.6 243.1.5 240.7.6 240.2.7 239.6 62.1.5 62.2.4c0 0 54 13.8 119.9 30.8S302.1 62 302.2 62c.2 0 .2.4.1.9-.2 1.5-61.5 239.3-61.7 239.5 0 .1-54.1-13.7-120.1-30.7M174.9 158c3.2-12.6 5.9-23.1 6-23.4.1-.5-2.3-1.2-23.2-6.6-12.8-3.3-23.5-5.9-23.6-5.8-.3.3-12.1 46.6-12 46.7.2.2 46.7 12.2 46.8 12.1 0-.1 2.7-10.4 6-23" />
 										</svg>
 									</div>
@@ -74,7 +74,7 @@ export default function ContactSection() {
 									</div>
 								</motion.a>
 								<motion.a
-									href="#"
+									href="https://www.linkedin.com/in/utku-%C3%BCnal-686851320/"
 									whileHover={{ scale: 1.05 }}
 									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
 								>
@@ -85,7 +85,7 @@ export default function ContactSection() {
 									</div>
 									<div>
 										<p className="font-semibold text-gray-200">LinkedIn</p>
-										<p className="text-sm text-gray-400">[PRIVATE FOR NOW]</p>
+										<p className="text-sm text-gray-400">Utku Ünal</p>
 									</div>
 								</motion.a>
 								<motion.a
@@ -94,7 +94,7 @@ export default function ContactSection() {
 									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
 								>
 									<div className="p-2 bg-gray-700/50 rounded-lg group-hover:bg-gray-600/50 transition-colors">
-										<svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+										<svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 -28.5 256 256">
 											<path d="M216.856 16.597A208.5 208.5 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046q-29.538-4.442-58.533 0c-1.832-4.4-4.55-9.933-6.846-14.046a207.8 207.8 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161 161 0 0 0 79.735 175.3a136.4 136.4 0 0 1-21.846-10.632 109 109 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a132 132 0 0 0 5.355 4.237 136 136 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36M85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2 23.236 11.804 23.015 26.2c.02 14.375-10.148 26.18-23.015 26.18m85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18" />
 										</svg>
 									</div>
