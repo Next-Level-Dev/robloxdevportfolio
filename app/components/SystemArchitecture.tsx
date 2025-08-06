@@ -43,11 +43,11 @@ export default function SystemArchitecture() {
 								'2nd year - Spent learning luau',
 								'3rd year - Spent with solo projects and self teaching',
 								'4th year - Spent taking various small commissions',
-								'5th year - Spent taking full commisions',
+								'5th year - Spent taking full commisions (also gave luau courses)',
 								'6th year - burn out',
 								'7th year - Spent taking full commissions (still going on)',
 							],
-							tech: ['Luau', 'UI', 'Animation'],
+							tech: ['Luau', 'UI', 'Animation', 'Learning', 'Tutor', 'Game Testing'],
 						},
 					].map((project, index) => (
 						<motion.div
