@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: '[Dinker] - Roblox Developer',
 		description: 'Passionate roblox developer producing modular and clean code and designing user interfaces.',
-		creator: '@NO_TWITTER_YET',
+		creator: '@[NO ACCOUNT]',
 		images: ['/og-image.jpg'],
 	},
 	robots: {
