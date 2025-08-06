@@ -35,8 +35,8 @@ export default function TechnicalMetrics() {
 							>
 								<h4 className="text-lg font-semibold text-gray-300">Performance</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Better Collisions</li>
-									<li>• Better Instancing & Loading</li>
+									<li>• Pre Loading</li>
+									<li>• Better Instancing (culling)</li>
 									<li>• Optimized Code</li>
 								</ul>
 							</motion.div>
@@ -68,7 +68,7 @@ export default function TechnicalMetrics() {
 								<h4 className="text-lg font-semibold text-gray-300">Performance</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
 									<li>• Faster Loading</li>
-									<li>• Pre Loading</li>
+									<li>• Better Collisions</li>
 									<li>• Culling</li>
 								</ul>
 							</motion.div>
