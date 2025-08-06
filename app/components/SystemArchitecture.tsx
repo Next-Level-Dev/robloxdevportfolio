@@ -35,6 +35,20 @@ export default function SystemArchitecture() {
 							],
 							tech: ['Luau', 'UI', 'Animation'],
 						},
+									{
+							title: 'Experience Timeline',
+							description: 'older experience that hasnt been documented',
+							details: [
+								'1st year - Spent trying game engines and learning roblox',
+								'2nd year - Spent learning luau',
+								'3rd year - Spent with solo projects and self teaching',
+								'4th year - Spent taking various small commissions',
+								'5th year - Spent taking full commisions',
+								'6th year - burn out',
+								'7th year - Spent taking full commissions (still going on)',
+							],
+							tech: ['Luau', 'UI', 'Animation'],
+						},
 					].map((project, index) => (
 						<motion.div
 							key={index}
