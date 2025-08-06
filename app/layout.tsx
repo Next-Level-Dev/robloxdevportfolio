@@ -33,19 +33,19 @@ export const metadata: Metadata = {
 		'System Design',
 		'Backend Architecture',
 	],
-	authors: [{ name: '[Your Name]' }],
-	creator: '[Your Name]',
+	authors: [{ name: '[Dinker]' }],
+	creator: '[Dinker]',
 	openGraph: {
-		title: '[Your Name] - Backend Developer Portfolio',
-		description: 'Passionate backend developer crafting scalable and efficient server architectures. Explore my projects and technical expertise.',
+		title: '[Dinker] - Roblox Developer Portfolio',
+		description: 'Roblox developer for the past 7 years.',
 		url: 'https://your-domain.com',
-		siteName: '[Your Name] - Portfolio',
+		siteName: '[Dinker] - Portfolio',
 		images: [
 			{
 				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
-				alt: '[Your Name] - Backend Developer Portfolio',
+				alt: '[Dinker] - Roblox Developer Portfolio',
 			},
 		],
 		locale: 'en_US',
@@ -53,9 +53,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: '[Your Name] - Backend Developer',
-		description: 'Passionate backend developer crafting scalable and efficient server architectures. Explore my projects and technical expertise.',
-		creator: '@yourusername',
+		title: '[Dinker] - Roblox Developer',
+		description: 'Passionate roblox developer producing modular and clean code and designing user interfaces.',
+		creator: '@NO_TWITTER_YET',
 		images: ['/og-image.jpg'],
 	},
 	robots: {
