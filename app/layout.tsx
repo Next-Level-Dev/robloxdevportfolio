@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: '[Dinker] - Roblox Developer Portfolio',
 		description: 'Roblox developer for the past 7 years.',
-		url: 'https://your-domain.com',
+		url: 'https://robloxdevportfolio.vercel.app/',
 		siteName: '[Dinker] - Portfolio',
 		images: [
 			{
