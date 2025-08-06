@@ -33,7 +33,7 @@ export default function ContactSection() {
 									/>
 									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
 								</svg>
-								<span>San Francisco, CA</span>
+								<span>Turkiye</span>
 							</div>
 							<p className="text-green-500 mt-8 mb-2">$ contact --email</p>
 							<motion.a
@@ -41,7 +41,7 @@ export default function ContactSection() {
 								whileHover={{ scale: 1.02 }}
 								className="inline-block px-6 py-3 bg-green-500/10 text-green-400 rounded-lg border border-green-500/20 hover:bg-green-500/20 transition-colors"
 							>
-								alex.chen@example.com
+								utku.businessemail@gmail.com
 							</motion.a>
 							<p className="text-green-500 mt-8 mb-2">$ cat resume.pdf</p>
 							<motion.a
@@ -54,7 +54,7 @@ export default function ContactSection() {
 								<svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
 									<path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" />
 								</svg>
-								<span>Download Resume</span>
+								<span>Download Resume [not done]</span>
 							</motion.a>
 							<p className="text-green-500 mt-8 mb-4">$ ls ./social-links</p>
 							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -70,7 +70,7 @@ export default function ContactSection() {
 									</div>
 									<div>
 										<p className="font-semibold text-gray-200">GitHub</p>
-										<p className="text-sm text-gray-400">@alexchen</p>
+										<p className="text-sm text-gray-400">@[private account]</p>
 									</div>
 								</motion.a>
 								<motion.a
@@ -85,7 +85,7 @@ export default function ContactSection() {
 									</div>
 									<div>
 										<p className="font-semibold text-gray-200">LinkedIn</p>
-										<p className="text-sm text-gray-400">Alex Chen</p>
+										<p className="text-sm text-gray-400">[Fullname Cencored]</p>
 									</div>
 								</motion.a>
 								<motion.a
@@ -100,7 +100,7 @@ export default function ContactSection() {
 									</div>
 									<div>
 										<p className="font-semibold text-gray-200">X</p>
-										<p className="text-sm text-gray-400">@alexchen</p>
+										<p className="text-sm text-gray-400">@[no account]</p>
 									</div>
 								</motion.a>
 							</div>
