@@ -118,7 +118,7 @@ export default function TechnicalMetrics() {
 								viewport={{ once: true }}
 								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
 							>
-								<h4 className="text-lg font-semibold text-gray-300">Supporty</h4>
+								<h4 className="text-lg font-semibold text-gray-300">Support</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
 									<li>• Free Bug-Fixes After Delivery</li>
 									<li>• Free Explanaiton & Tutorials After Delivery</li>
