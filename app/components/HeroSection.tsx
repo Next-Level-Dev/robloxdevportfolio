@@ -28,11 +28,11 @@ export default function HeroSection() {
 						<p className="text-gray-400 mb-2">Experienced Luau Scripter and Roblox User Interface Designer</p>
 						<p className="text-green-500">$ skills</p>
 						<div className="flex flex-wrap gap-2 mt-2">
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Luau</span>
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Python</span>
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Lua</span>
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Roblox GUI</span>
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Very Little Of Other Languages</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Luau/Lua Professional Programming</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Python Intermediate Programming</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Roblox GUI Design</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Game Testing And Profiling</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Content Analysis And Planning</span>
 						</div>
 					</div>
 				</motion.div>
