@@ -33,7 +33,7 @@ export default function SystemArchitecture() {
 								'Created awesome guis for the leaderboards',
 								'Fixed bugs with the combat system',
 							],
-							tech: ['Luau', 'UI', "Animation],
+							tech: ['Luau', 'UI', 'Animation'],
 						},
 					].map((project, index) => (
 						<motion.div
