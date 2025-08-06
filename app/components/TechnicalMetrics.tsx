@@ -13,7 +13,7 @@ export default function TechnicalMetrics() {
 				<div className="grid grid-cols-1 gap-12">
 					{/* System Performance */}
 					<div>
-						<h3 className="text-xl font-semibold mb-6 text-green-400">System Performance</h3>
+						<h3 className="text-xl font-semibold mb-6 text-green-400">Game Performance</h3>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<motion.div
 								initial={{ opacity: 0, scale: 0.95 }}
@@ -23,9 +23,9 @@ export default function TechnicalMetrics() {
 							>
 								<h4 className="text-lg font-semibold text-gray-300">API Gateway</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• P95 latency reduced from 250ms to 80ms</li>
-									<li>• 99.99% availability achieved</li>
-									<li>• Handles 2M requests/day</li>
+									<li>• Better Collisions</li>
+									<li>• Better Instancing and Loading</li>
+									<li>• Optimized Code</li>
 								</ul>
 							</motion.div>
 							<motion.div
@@ -34,11 +34,11 @@ export default function TechnicalMetrics() {
 								viewport={{ once: true }}
 								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
 							>
-								<h4 className="text-lg font-semibold text-gray-300">Database Optimization</h4>
+								<h4 className="text-lg font-semibold text-gray-300">Code Rework</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Query response time improved by 70%</li>
-									<li>• Implemented efficient indexing strategy</li>
-									<li>• Reduced DB load by 45%</li>
+									<li>• Cleaner and readable code</li>
+									<li>• Modular code that can be built upon</li>
+									<li>• Organization freak</li>
 								</ul>
 							</motion.div>
 						</div>
@@ -46,7 +46,7 @@ export default function TechnicalMetrics() {
 
 					{/* Infrastructure & DevOps */}
 					<div>
-						<h3 className="text-xl font-semibold mb-6 text-green-400">Infrastructure & DevOps</h3>
+						<h3 className="text-xl font-semibold mb-6 text-green-400">Cdoe and Game Infrastructure</h3>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<motion.div
 								initial={{ opacity: 0, scale: 0.95 }}
@@ -56,9 +56,8 @@ export default function TechnicalMetrics() {
 							>
 								<h4 className="text-lg font-semibold text-gray-300">Cloud Infrastructure</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Reduced AWS costs by 35%</li>
-									<li>• Implemented auto-scaling for 20+ services</li>
-									<li>• Zero-downtime deployments</li>
+									<li>• Better organized workspaces</li>
+									<li>• Better named and split code bases</li>
 								</ul>
 							</motion.div>
 							<motion.div
@@ -67,11 +66,10 @@ export default function TechnicalMetrics() {
 								viewport={{ once: true }}
 								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
 							>
-								<h4 className="text-lg font-semibold text-gray-300">CI/CD Pipeline</h4>
+								<h4 className="text-lg font-semibold text-gray-300">Communication</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Reduced deployment time by 65%</li>
-									<li>• Automated testing coverage at 90%</li>
-									<li>• Integration tests success rate 99.5%</li>
+									<li>• C2 English Certificate</li>
+									<li>• Adapting to professional and friendly environments</li>
 								</ul>
 							</motion.div>
 						</div>
@@ -79,7 +77,7 @@ export default function TechnicalMetrics() {
 
 					{/* Development & Leadership */}
 					<div>
-						<h3 className="text-xl font-semibold mb-6 text-green-400">Development & Leadership</h3>
+						<h3 className="text-xl font-semibold mb-6 text-green-400">Support</h3>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<motion.div
 								initial={{ opacity: 0, scale: 0.95 }}
@@ -89,9 +87,9 @@ export default function TechnicalMetrics() {
 							>
 								<h4 className="text-lg font-semibold text-gray-300">Code Quality</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Led adoption of TypeScript across backend</li>
-									<li>• Established coding standards</li>
-									<li>• Reduced technical debt by 40%</li>
+									<li>• Free bug-fixes after delivery</li>
+									<li>• Free explanaiton & tutorials after delivery</li>
+									<li>• Understandable work flow and constant updates</li>
 								</ul>
 							</motion.div>
 							<motion.div
@@ -100,11 +98,11 @@ export default function TechnicalMetrics() {
 								viewport={{ once: true }}
 								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
 							>
-								<h4 className="text-lg font-semibold text-gray-300">Team Impact</h4>
+								<h4 className="text-lg font-semibold text-gray-300">Been in the sector for 7+ years</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
-									<li>• Mentored 4 junior developers</li>
-									<li>• Created 30+ technical documentation guides</li>
-									<li>• Led 3 major system migrations</li>
+									<li>• I know how to do transtactions safe</li>
+									<li>• More than 50 customers that appreciate my work</li>
+									<li>• Good with communication and community management</li>
 								</ul>
 							</motion.div>
 						</div>
