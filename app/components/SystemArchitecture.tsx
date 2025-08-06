@@ -13,26 +13,27 @@ export default function SystemArchitecture() {
 				<div className="grid grid-cols-1 gap-8">
 					{[
 						{
-							title: 'Scalable Microservices Architecture',
-							description: 'Designed and implemented a microservices architecture handling 1M+ daily requests with 99.99% uptime',
+							title: 'A Cancelled Project That I Was Commissioned For',
+							description: '%90 of the full development work was on me.',
 							details: [
-								'Containerized microservices with Docker and Kubernetes',
-								'Implemented service mesh with Istio',
-								'Designed event-driven architecture using Apache Kafka',
-								'Achieved 40% reduction in response times',
+								'Coded interaction and physics based items',
+								'Implemented custom physical currency systems',
+								'Designed and coded simple user interfaces',
+								'Added ragdoll mechanics',
+								'Cleaned and bug-fixed previous code',
 							],
-							tech: ['Kubernetes', 'Docker', 'Istio', 'Kafka', 'MongoDB', 'Redis'],
+							tech: ['Luau', 'UI'],
 						},
 						{
-							title: 'Real-time Data Processing Pipeline',
-							description: 'Built a robust data processing pipeline handling 5TB+ daily data with sub-second latency',
+							title: 'Another Recent Project',
+							description: 'I was hired for bug-fixes and improvements.',
 							details: [
-								'Implemented stream processing with Apache Flink',
-								'Designed fault-tolerant architecture with automatic failover',
-								'Optimized data throughput by 60%',
-								'Implemented comprehensive monitoring with Prometheus & Grafana',
+								'Implemented data based global leaderboards that update realtime',
+								'Edited some animations for speed changes and ownership issues',
+								'Created awesome guis for the leaderboards',
+								'Fixed bugs with the combat system',
 							],
-							tech: ['Apache Flink', 'AWS Kinesis', 'Prometheus', 'Grafana', 'Python', 'PostgreSQL'],
+							tech: ['Luau', 'UI', "Animation],
 						},
 					].map((project, index) => (
 						<motion.div
