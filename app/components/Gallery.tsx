@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 
 const images = [
   'https://i.postimg.cc/YS9KPR8N/Untitled-design.png',
@@ -11,29 +11,51 @@ const images = [
 ];
 
 export default function Gallery() {
-  return (
-    <section className="py-20 px-4 max-w-6xl mx-auto backdrop-blur-lg border border-gray-800 bg-gradient-to-r from-green-500/5 to-blue-500/5">
-      <h2 className="text-3xl font-bold text-center mb-5">Image Gallery</h2>
+  const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
-      {/* 2 images per row on all screen sizes */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
-        {images.map((url, index) => (
-          <div
-            key={index}
-            className="relative w-full aspect-video rounded-md overflow-hidden shadow-md"
-          >
-            <Image
-              src={url}
-              alt={`Gallery image ${index + 1}`}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              style={{ objectFit: 'cover' }}
-              priority={index === 0}
-              unoptimized={false}
-            />
-          </div>
-        ))}
-      </div>
-    </section>
+  const openImage = (url: string) => setSelectedImg(url);
+  const closeImage = () => setSelectedImg(null);
+
+  return (
+    <>
+      <section className="py-20 px-4 max-w-12xl mx-auto backdrop-blur-lg border border-gray-800 bg-gradient-to-r from-green-500/5 to-blue-500/5">
+        <h2 className="text-3xl font-bold text-center mb-5">Image Gallery</h2>
+
+        {/* 2 images per row on all screen sizes */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+          {images.map((url, index) => (
+            <div
+              key={index}
+              className="relative w-full aspect-video rounded-md overflow-hidden shadow-md cursor-pointer"
+              onClick={() => openImage(url)}
+            >
+              <Image
+                src={url}
+                alt={`Gallery image ${index + 1}`}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: 'cover' }}
+                priority={index === 0}
+                unoptimized={false}
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Modal overlay */}
+      {selectedImg && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 cursor-zoom-out"
+          onClick={closeImage}
+        >
+          <img
+            src={selectedImg}
+            alt="Full view"
+            className="max-w-full max-h-full rounded-md shadow-lg"
+          />
+        </div>
+      )}
+    </>
   );
 }

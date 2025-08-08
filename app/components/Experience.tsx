@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 export default function Experience() {
 	return (
 		<section className="py-20 px-4">
-			<div className="max-w-6xl mx-auto">
+			<div className="max-w-6xl mx-auto backdrop-blur-lg border border-gray-800 bg-gradient-to-r from-green-500/5 to-blue-500/5">
 				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold mb-8 text-center">
 					Experience & Projects
 				</motion.h2>
 
-				<div className="grid grid-cols-1 gap-8 backdrop-blur-lg border border-gray-800 bg-gradient-to-r from-green-500/5 to-blue-500/5">
+				<div className="grid grid-cols-1 gap-8">
 					{[
 						{
 							title: 'A Cancelled Project That I Was Commissioned For',
