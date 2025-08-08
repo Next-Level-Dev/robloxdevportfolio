@@ -32,10 +32,11 @@ export default function RootLayout({
         {/* Background grid + mask + blur */}
         <div className="fixed inset-0 -z-10">
           <div
-            className="absolute inset-0 bg-[url('/grid2.svg')] bg-center bg-repeat opacity-40"
+            className="absolute inset-0 bg-[url('/grid2.svg')] bg-repeat opacity-40"
             style={{
-              backgroundSize: '15% 15%',
+              backgroundSize: '45% 45%',
               filter: 'blur(2px)',
+              backgroundPosition: 'top left',
             }}
           />
           <div
@@ -51,10 +52,10 @@ export default function RootLayout({
         </div>
 
         <main className="min-h-screen flex flex-col justify-center">
-          <div className="w-full border-t border-red-500 mt-5 h-0" />
-          <HashCleaner />
-          {children}
-          <div className="w-full border-t border-red-500 mt-5 h-0" />
+            <HashCleaner />
+            <div className="w-full border-t border-red-500 mt-5" />
+            <div className="flex-grow">{children}</div>
+            <div className="w-full border-t border-red-500 mt-5" />
         </main>
       </body>
     </html>
