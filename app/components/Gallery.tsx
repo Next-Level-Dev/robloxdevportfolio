@@ -4,9 +4,9 @@ import React from 'react';
 
 const images = [
   'https://i.postimg.cc/YS9KPR8N/Untitled-design.png',
+  'https://i.postimg.cc/PqWHyxx6/image.png',
   'https://i.postimg.cc/YS9KPR8N/Untitled-design.png',
-  'https://i.postimg.cc/YS9KPR8N/Untitled-design.png',
-  'https://i.postimg.cc/YS9KPR8N/Untitled-design.png',
+  'https://i.postimg.cc/PqWHyxx6/image.png',
   'https://i.postimg.cc/YS9KPR8N/Untitled-design.png',
 ];
 
