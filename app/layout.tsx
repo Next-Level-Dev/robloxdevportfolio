@@ -130,10 +130,10 @@ export default function RootLayout({
         <main className="min-h-screen flex flex-col justify-center">
           <HashCleaner />
           {children}
-        </main>
 
-        {/* Bottom border */}
-        <div className="w-full border-t border-red-500 mt-5 h-0" />
+          {/* Bottom border */}
+          <div className="w-full border-t border-red-500 mt-5 h-0" />
+        </main>
       </body>
     </html>
   );
