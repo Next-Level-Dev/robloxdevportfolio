@@ -14,6 +14,9 @@ export default function Gallery() {
   return (
     <section className="p-8">
       <h2 className="text-3xl font-bold text-center mb-6">Image Gallery</h2>
+
+      <div className="w-full border-t border-gray-700 mt-4" />
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((url, index) => (
           <div key={index} className="relative w-full h-64">
@@ -27,7 +30,7 @@ export default function Gallery() {
         ))}
       </div>
 
-       <div className="w-full border-t border-gray-700 mt-4" />
+      <div className="w-full border-t border-gray-700 mt-4" />
     </section>
   );
 }

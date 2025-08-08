@@ -10,6 +10,8 @@ export default function Experience() {
 					Experience & Projects
 				</motion.h2>
 
+                <div className="w-full border-t border-gray-700 mt-4" />
+
 				<div className="grid grid-cols-1 gap-8">
 					{[
 						{
