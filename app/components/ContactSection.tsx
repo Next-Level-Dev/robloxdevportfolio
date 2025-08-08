@@ -10,7 +10,7 @@ export default function ContactSection() {
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
 					viewport={{ once: true }}
-					className="relative p-8 rounded-2xl overflow-hidden"
+					className="relative p-8 rounded-2xl overflow-hidden backdrop-blur-lg border border-gray-800 bg-black/50"
 				>
                     <div className="absolute inset-0 bg-gradient-to-r from-green-500/5 to-blue-500/5" />
 					<div className="relative z-10">
