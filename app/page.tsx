@@ -1,11 +1,11 @@
 'use client';
 
 import HeroSection from './components/HeroSection';
-import SystemArchitecture from './components/SystemArchitecture';
-import TechnicalMetrics from './components/TechnicalMetrics';
-import ContactSection from './components/ContactSection';
-import Gallery from './components/Gallery';
-import Navbar from './components/Navbar'; // ✅ Import Navbar
+import experience from './components/Experience';
+import skills from './components/SkillMetrics';
+import contact from './components/ContactSection';
+import gallery from './components/Gallery';
+import navbar from './components/Navbar'; // ✅ Import Navbar
 
 export default function BackendPortfolio() {
 	return (
@@ -14,17 +14,17 @@ export default function BackendPortfolio() {
 			<section id="hero">
 				<HeroSection />
 			</section>
-			<section id="architecture">
-				<SystemArchitecture />
+			<section id="experience">
+				<experience />
 			</section>
-			<section id="metrics">
-				<TechnicalMetrics />
+			<section id="skills">
+				<skills />
 			</section>
 			<section id="gallery">
-				<Gallery />
+				<gallery />
 			</section>
 			<section id="contact">
-				<ContactSection />
+				<contact />
 			</section>
 		</main>
 	);
