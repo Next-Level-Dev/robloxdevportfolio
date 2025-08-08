@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import HashCleaner from './components/HashCleaner';
+import ScrollToTop from './components/ScrollToTop';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -102,6 +103,7 @@ export default function RootLayout({
 
         <main className="min-h-screen flex flex-col justify-center">
             <HashCleaner />
+            <ScrollToTop />
             {children}
         </main>
       </body>
