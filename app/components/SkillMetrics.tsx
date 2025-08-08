@@ -10,7 +10,7 @@ export default function SkillMetrics() {
 					Practices, Achievements & Skills
 				</motion.h2>
 
-				<div className="grid grid-cols-1 gap-12">
+				<div className="grid grid-cols-1 gap-12 backdrop-blur-lg border border-gray-800 bg-gradient-to-r from-green-500/5 to-blue-500/5">
 					{/* System Performance */}
 					<div>
 						<h3 className="text-xl font-semibold mb-6 text-green-400">Code Infrastructure</h3>
