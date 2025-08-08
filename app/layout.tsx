@@ -102,7 +102,7 @@ export default function RootLayout({
         </main>
 
         {/* Bottom border line */}
-        <div className="w-full border-t border-gray-700 mt-5" />
+        <div className="w-full border-t border-red-500 mt-5 h-0" />
       </body>
     </html>
   );

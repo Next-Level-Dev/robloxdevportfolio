@@ -3,7 +3,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['source.unsplash.com'], // You can add more domains as needed
+    domains: ['i.postimg.cc'], // You can add more domains as needed
   },
 };
 
