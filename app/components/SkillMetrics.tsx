@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function SkillMetrics() {
 	return (
 		<section className="py-20 px-4">
-			<div className="max-w-6xl mx-auto backdrop-blur-lg border border-gray-800 bg-gradient-to-r from-green-500/5 to-blue-500/5">
+			<div className="max-w-6xl mx-auto">
 				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold mb-8 text-center">
 					Practices, Achievements & Skills
 				</motion.h2>

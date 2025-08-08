@@ -18,7 +18,7 @@ export default function Gallery() {
 
   return (
     <>
-      <section className="py-20 px-4 max-w-12xl mx-auto backdrop-blur-lg border border-gray-800 bg-gradient-to-r from-green-500/5 to-blue-500/5">
+      <section className="py-20 px-15 max-w-12xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-5">Image Gallery</h2>
 
         {/* 2 images per row on all screen sizes */}
