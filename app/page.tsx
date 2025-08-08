@@ -9,7 +9,7 @@ import Navbar from './components/Navbar'; // ✅ Import Navbar
 
 export default function BackendPortfolio() {
 	return (
-		<main className="min-h-screen bg-[#1A1A1A] text-white overflow-x-hidden scroll-smooth">
+		<main className="min-h-screen text-white overflow-x-hidden scroll-smooth">
 			<Navbar />
 			<section id="Hero">
 				<HeroSection />
