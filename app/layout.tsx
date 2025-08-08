@@ -51,10 +51,9 @@ export default function RootLayout({
         </div>
 
         <main className="min-h-screen flex flex-col justify-center">
-          <HashCleaner /> {/* ✅ Called here */}
+          <div className="w-full border-t border-red-500 mt-5 h-0" />
+          <HashCleaner />
           {children}
-
-          {/* Bottom border */}
           <div className="w-full border-t border-red-500 mt-5 h-0" />
         </main>
       </body>
