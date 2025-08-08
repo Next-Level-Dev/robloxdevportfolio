@@ -79,17 +79,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
+        className={${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen}
       >
         {/* Grid background */}
         <div
-          className="fixed inset-0 -z-10 bg-[url('/pattern.svg')] bg-center bg-repeat opacity-10"
-            style={{
-              backgroundSize: '5% 5%',
-              backgroundRepeat: 'repeat',
-              maskImage: 'radial-gradient(circle at center, white 0%, white 40%, transparent 70%)',
-              WebkitMaskImage: 'radial-gradient(circle at center, white 0%, white 40%, transparent 70%)',
-            }}
+          className="fixed inset-0 -z-10 bg-[url('/grid2.svg')] bg-center opacity-10"
+          style={{
+            backgroundSize: '25% 25%',
+            maskImage:
+              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
+            WebkitMaskImage:
+              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
+          }}
         />
 
         {/* Center page content vertically */}
