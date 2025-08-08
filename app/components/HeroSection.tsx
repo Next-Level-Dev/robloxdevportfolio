@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function HeroSection() {
     return (
-        <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+        <section className="relative flex flex-col items-center justify-center overflow-hidden">
             <div className="relative z-8 max-w-4xl w-full mx-4">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
