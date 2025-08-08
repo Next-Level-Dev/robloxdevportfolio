@@ -33,11 +33,6 @@ export default function RootLayout({
         <div className="fixed inset-0 -z-10">
           <div
             className="absolute inset-0 bg-[url('/grid2.svg')] bg-repeat opacity-40"
-            style={{
-              backgroundSize: '45% 45%',
-              filter: 'blur(2px)',
-              backgroundPosition: 'top left',
-            }}
           />
           <div
             className="absolute inset-0 pointer-events-none"
@@ -53,9 +48,7 @@ export default function RootLayout({
 
         <main className="min-h-screen flex flex-col justify-center">
             <HashCleaner />
-            <div className="w-full border-t border-red-500 mt-5" />
-            <div className="flex-grow">{children}</div>
-            <div className="w-full border-t border-red-500 mt-5" />
+            {children}
         </main>
       </body>
     </html>

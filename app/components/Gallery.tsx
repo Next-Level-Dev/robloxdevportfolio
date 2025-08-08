@@ -13,7 +13,7 @@ const images = [
 export default function Gallery() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold text-center 1">Image Gallery</h2>
+      <h2 className="text-3xl font-bold text-center mb-8 1">Image Gallery</h2>
 
       {/* 2 images per row on all screen sizes */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
