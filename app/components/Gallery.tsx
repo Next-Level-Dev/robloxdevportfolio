@@ -12,23 +12,24 @@ const images = [
 
 export default function Gallery() {
   return (
-    <section className="p-4">
-      <h2 className="text-3xl font-bold text-center mb-3">Image Gallery</h2>
+    <section className="p-4 max-w-6xl mx-auto">
+      <h2 className="text-3xl font-bold text-center mb-6">Image Gallery</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      {/* 2 images per row on all screen sizes */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {images.map((url, index) => (
           <div
             key={index}
-            className="relative w-full h-64 rounded-md overflow-hidden"
+            className="relative w-full aspect-video rounded-md overflow-hidden shadow-md"
           >
             <Image
               src={url}
               alt={`Gallery image ${index + 1}`}
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              sizes="(max-width: 768px) 100vw, 50vw"
               style={{ objectFit: 'cover' }}
-              priority={index === 0} // preload first image for better UX
-              unoptimized={false} // allow optimization; set true if external fails
+              priority={index === 0}
+              unoptimized={false}
             />
           </div>
         ))}
