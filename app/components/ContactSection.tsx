@@ -12,6 +12,7 @@ export default function ContactSection() {
 					viewport={{ once: true }}
 					className="relative p-8 rounded-2xl overflow-hidden"
 				>
+                    <div className="absolute inset-0 bg-gradient-to-r from-green-500/5 to-blue-500/5" />
 					<div className="relative z-10">
 						<div className="flex items-center gap-2 mb-6">
 							<div className="w-3 h-3 rounded-full bg-red-500" />

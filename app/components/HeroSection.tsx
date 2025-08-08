@@ -10,7 +10,7 @@ export default function HeroSection() {
 				<div className="absolute inset-0" />
 			</div>
 
-			<div className="relative z-10 max-w-4xl w-full mx-4">
+			<div className="relative z-8 max-w-4xl w-full mx-4">
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
