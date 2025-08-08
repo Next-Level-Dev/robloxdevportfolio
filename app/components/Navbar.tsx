@@ -16,13 +16,11 @@ export default function Navbar() {
 				<div className="text-xl font-bold text-white">[Dinker]</div>
 				<div className="space-x-6">
 					{navItems.map((item) => (
-						<a
-							key={item.href}
-							href={item.href}
-							className="text-white hover:text-gray-300 transition-colors duration-200"
-						>
-							{item.name}
-						</a>
+						<Link key={item.href} href={item.href}>
+							<span className="text-white hover:text-gray-300 transition-colors duration-200 cursor-pointer">
+								{item.name}
+							</span>
+						</Link>
 					))}
 				</div>
 			</div>
