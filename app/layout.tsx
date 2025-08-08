@@ -72,18 +72,26 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}>
-                {/* Global grid background */}
-                <div className="fixed inset-0 -z-10 bg-[url('/grid.svg')] bg-center bg-repeat opacity-10 [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
-                
-                {children}
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
+      >
+        {/* Global grid background */}
+        <div
+          className="fixed inset-0 -z-10 bg-[url('/grid.svg')] bg-center bg-repeat opacity-10"
+          style={{
+            maskImage: 'linear-gradient(180deg, white, rgba(255,255,255,0))',
+            WebkitMaskImage: 'linear-gradient(180deg, white, rgba(255,255,255,0))',
+          }}
+        />
+        {children}
+      </body>
+    </html>
+  );
 }
+
