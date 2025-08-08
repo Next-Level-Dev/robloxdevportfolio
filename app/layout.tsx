@@ -88,8 +88,10 @@ export default function RootLayout({
             backgroundSize: '25% 25%',
             maskImage:
               'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
+              'linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
             WebkitMaskImage:
               'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
+              'linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
           }}
         />
 
