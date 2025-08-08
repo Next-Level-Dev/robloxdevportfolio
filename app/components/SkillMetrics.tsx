@@ -10,8 +10,6 @@ export default function SkillMetrics() {
 					Practices, Achievements & Skills
 				</motion.h2>
 
-                <div className="w-full border-t border-gray-700 mt-4" />
-
 				<div className="grid grid-cols-1 gap-12">
 					{/* System Performance */}
 					<div>
@@ -145,8 +143,6 @@ export default function SkillMetrics() {
 					</div>
 				</div>
 			</div>
-
-             <div className="w-full border-t border-gray-700 mt-4" />
 		</section>
 	);
 }

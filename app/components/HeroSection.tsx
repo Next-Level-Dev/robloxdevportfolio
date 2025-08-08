@@ -32,9 +32,6 @@ export default function HeroSection() {
                     </div>
                 </motion.div>
             </div>
-
-            {/* 🔽 Separator Line at Bottom */}
-            <div className="w-full border-t border-gray-700 mt-4" />
         </section>
     );
 }
