@@ -83,7 +83,7 @@ export default function RootLayout({
       >
         {/* Global grid background */}
         <div
-          className="fixed inset-0 -z-7 bg-[url('/grid.svg')] bg-center bg-repeat opacity-10"
+          className="fixed inset-0 -z-10 bg-[url('/grid.svg')] bg-center bg-repeat opacity-10"
           style={{
             maskImage: 'linear-gradient(180deg, white, rgba(255,255,255,0))',
             WebkitMaskImage: 'linear-gradient(180deg, white, rgba(255,255,255,0))',
