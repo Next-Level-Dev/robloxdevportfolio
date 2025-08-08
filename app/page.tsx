@@ -1,30 +1,30 @@
 'use client';
 
 import HeroSection from './components/HeroSection';
-import experience from './components/Experience';
-import skills from './components/SkillMetrics';
-import contact from './components/ContactSection';
-import gallery from './components/Gallery';
-import navbar from './components/Navbar'; // ✅ Import Navbar
+import Experience from './components/Experience';
+import Skills from './components/SkillMetrics';
+import Contact from './components/ContactSection';
+import Gallery from './components/Gallery';
+import Navbar from './components/Navbar'; // ✅ Import Navbar
 
 export default function BackendPortfolio() {
 	return (
 		<main className="min-h-screen bg-[#1A1A1A] text-white overflow-x-hidden scroll-smooth">
-			<Navbar /> {/* ✅ Add the Navbar */}
-			<section id="hero">
+			<Navbar />
+			<section id="Hero">
 				<HeroSection />
 			</section>
-			<section id="experience">
-				<experience />
+			<section id="Experience">
+				<Experience />
 			</section>
-			<section id="skills">
-				<skills />
+			<section id="Skills">
+				<Skills />
 			</section>
-			<section id="gallery">
-				<gallery />
+			<section id="Gallery">
+				<Gallery />
 			</section>
-			<section id="contact">
-				<contact />
+			<section id="Contact">
+				<Contact />
 			</section>
 		</main>
 	);
