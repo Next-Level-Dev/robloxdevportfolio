@@ -79,7 +79,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
       >
         {/* Grid background */}
         <div
@@ -87,11 +87,9 @@ export default function RootLayout({
           style={{
             backgroundSize: '25% 25%',
             maskImage:
-              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
-              'linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
+              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent), linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
             WebkitMaskImage:
-              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
-              'linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
+              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent), linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
           }}
         />
 
@@ -101,7 +99,7 @@ export default function RootLayout({
         </main>
 
         {/* Bottom border line */}
-        <div className="w-full border-t border-white-700 mt-5" />
+        <div className="w-full border-t border-gray-700 mt-5" />
       </body>
     </html>
   );
