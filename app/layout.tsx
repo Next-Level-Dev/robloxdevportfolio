@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import HashCleaner from '@/components/HashCleaner'; // ✅ Import the new client component
+import HashCleaner from './components/HashCleaner';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
