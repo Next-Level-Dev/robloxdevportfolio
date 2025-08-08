@@ -38,9 +38,9 @@ export default function RootLayout({
             className="absolute inset-0 pointer-events-none"
             style={{
               maskImage:
-                'linear-gradient(to top, white, transparent 40%, transparent 60%, white)',
+                'linear-gradient(to top, white, transparent 40%, transparent 60%, white), linear-gradient(to right, white, transparent 40%, transparent 60%, white)',
               WebkitMaskImage:
-                'linear-gradient(to top, white, transparent 40%, transparent 60%, white)',
+                'linear-gradient(to top, white, transparent 40%, transparent 60%, white), linear-gradient(to right, white, transparent 40%, transparent 60%, white)',
               backgroundColor: '#1a1a1a',
             }}
           />
