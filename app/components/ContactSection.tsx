@@ -39,7 +39,9 @@ export default function ContactSection() {
 							</div>
 							<p className="text-green-500 mt-8 mb-2">$ contact --email</p>
 							<motion.a
-								href="mailto:utku.businessemail@gmail.com"
+								href="https://mail.google.com/mail/?view=cm&fs=1&to=utku.businessemail@gmail.com&su=Subject&body=Body"
+                                target="_blank"
+                                rel="noopener noreferrer"
 								whileHover={{ scale: 1.02 }}
 								className="inline-block px-6 py-3 bg-green-500/10 text-green-400 rounded-lg border border-green-500/20 hover:bg-green-500/20 transition-colors"
 							>
