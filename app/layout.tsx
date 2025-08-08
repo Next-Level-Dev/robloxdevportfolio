@@ -32,7 +32,7 @@ export default function RootLayout({
         {/* Background grid + mask + blur */}
         <div className="fixed inset-0 -z-10">
           <div
-            className="absolute inset-0 bg-[url('/grid2.svg')] bg-center opacity-40"
+            className="absolute inset-0 bg-[url('/grid2.svg')] bg-center bg-repeat opacity-40"
             style={{
               backgroundSize: '15% 15%',
               filter: 'blur(2px)',
@@ -42,9 +42,9 @@ export default function RootLayout({
             className="absolute inset-0 pointer-events-none"
             style={{
               maskImage:
-                'linear-gradient(to top, transparent, white 40%, white 60%, transparent), linear-gradient(to bottom, transparent, white 40%, white 60%, transparent)',
+                'linear-gradient(to top, white, transparent 40%, transparent 60%, white)',
               WebkitMaskImage:
-                'linear-gradient(to top, transparent, white 40%, white 60%, transparent), linear-gradient(to bottom, transparent, white 40%, white 60%, transparent)',
+                'linear-gradient(to top, white, transparent 40%, transparent 60%, white)',
               backgroundColor: '#1a1a1a',
             }}
           />
