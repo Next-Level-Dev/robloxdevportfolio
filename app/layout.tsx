@@ -1,6 +1,8 @@
+'use client';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import { useEffect } from 'react';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -11,6 +13,24 @@ const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
 });
+
+function HashCleaner() {
+  useEffect(() => {
+    if (window.location.hash) {
+      const hash = window.location.hash;
+
+      setTimeout(() => {
+        const target = document.querySelector(hash);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+        history.replaceState(null, '', window.location.pathname);
+      }, 100);
+    }
+  }, []);
+
+  return null;
+}
 
 export const metadata: Metadata = {
   title: '[Dinker] - Roblox Developer',
@@ -92,16 +112,27 @@ export default function RootLayout({
               filter: 'blur(2px)',
             }}
           />
-          {/* Two linear gradients mask overlay for rectangular fade */}
-          <div className="absolute inset-0 pointer-events-none"/>
+
+          {/* Rectangular fade mask using two gradients */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              maskImage:
+                'linear-gradient(to top, transparent, white 40%, white 60%, transparent), linear-gradient(to bottom, transparent, white 40%, white 60%, transparent)',
+              WebkitMaskImage:
+                'linear-gradient(to top, transparent, white 40%, white 60%, transparent), linear-gradient(to bottom, transparent, white 40%, white 60%, transparent)',
+              backgroundColor: '#1a1a1a',
+            }}
+          />
         </div>
 
-        {/* Center page content vertically */}
+        {/* Main content */}
         <main className="min-h-screen flex flex-col justify-center">
+          <HashCleaner />
           {children}
         </main>
 
-        {/* Bottom border line */}
+        {/* Bottom border */}
         <div className="w-full border-t border-red-500 mt-5 h-0" />
       </body>
     </html>
