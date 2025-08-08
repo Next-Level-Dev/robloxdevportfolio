@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-export default function TechnicalMetrics() {
+export default function SkillMetrics() {
 	return (
 		<section className="py-20 px-4 bg-gray-900/50">
 			<div className="max-w-6xl mx-auto">
