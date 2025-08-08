@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function SkillMetrics() {
 	return (
-		<section className="py-20 px-4 bg-gray-900/50">
+		<section className="py-20 px-4">
 			<div className="max-w-6xl mx-auto">
 				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold mb-12 text-center">
 					Practices, Achievements & Skills
@@ -129,8 +129,7 @@ export default function SkillMetrics() {
 								initial={{ opacity: 0, scale: 0.95 }}
 								whileInView={{ opacity: 1, scale: 1 }}
 								viewport={{ once: true }}
-								//className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
-                                className="rounded-lg p-6 border border-gray-700"
+								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
 							>
 								<h4 className="text-lg font-semibold text-gray-300">Been in the sector for 7+ years</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">
