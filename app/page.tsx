@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import SystemArchitecture from './components/SystemArchitecture';
 import TechnicalMetrics from './components/TechnicalMetrics';
 import ContactSection from './components/ContactSection';
+import Gallery from './components/Gallery'; 
 
 export default function BackendPortfolio() {
 	return (
@@ -11,6 +12,7 @@ export default function BackendPortfolio() {
 			<HeroSection />
 			<SystemArchitecture />
 			<TechnicalMetrics />
+			<Gallery /> 
 			<ContactSection />
 		</main>
 	);
