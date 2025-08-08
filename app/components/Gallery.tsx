@@ -17,12 +17,18 @@ export default function Gallery() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((url, index) => (
-          <div key={index} className="relative w-full h-64">
+          <div
+            key={index}
+            className="relative w-full h-64 rounded-md overflow-hidden"
+          >
             <Image
               src={url}
               alt={`Gallery image ${index + 1}`}
               fill
-              className="object-cover rounded-md"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              style={{ objectFit: 'cover' }}
+              priority={index === 0} // preload first image for better UX
+              unoptimized={false} // allow optimization; set true if external fails
             />
           </div>
         ))}
