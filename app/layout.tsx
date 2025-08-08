@@ -81,12 +81,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
       >
-        {/* Global grid background */}
+        {/* Global grid background with top & bottom fade */}
         <div
-          className="fixed inset-0 -z-10 bg-[url('/grid.svg')] bg-center bg-repeat opacity-10"
+          className="fixed inset-0 -z-10 bg-[url('/grid2.svg')] bg-center bg-repeat opacity-10"
           style={{
-            maskImage: 'linear-gradient(180deg, white, rgba(255,255,255,0))',
-            WebkitMaskImage: 'linear-gradient(180deg, white, rgba(255,255,255,0))',
+            maskImage:
+              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
+            WebkitMaskImage:
+              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
           }}
         />
         {children}
@@ -94,4 +96,3 @@ export default function RootLayout({
     </html>
   );
 }
-

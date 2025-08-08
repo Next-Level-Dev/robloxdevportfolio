@@ -129,7 +129,8 @@ export default function SkillMetrics() {
 								initial={{ opacity: 0, scale: 0.95 }}
 								whileInView={{ opacity: 1, scale: 1 }}
 								viewport={{ once: true }}
-								className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
+								//className="bg-gray-800/50 rounded-lg p-6 border border-gray-700"
+                                className="rounded-lg p-6 border border-gray-700"
 							>
 								<h4 className="text-lg font-semibold text-gray-300">Been in the sector for 7+ years</h4>
 								<ul className="mt-2 space-y-2 text-gray-400">

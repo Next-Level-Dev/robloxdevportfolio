@@ -56,7 +56,8 @@ export default function Experience() {
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
 							transition={{ delay: index * 0.2 }}
-							className="bg-gray-900/50 rounded-xl p-6 backdrop-blur-sm border border-gray-800"
+							//className="bg-gray-900/50 rounded-xl p-6 backdrop-blur-sm border border-gray-800"
+                            className="rounded-xl p-6 border border-gray-800"
 						>
 							<h3 className="text-2xl font-bold mb-4">{project.title}</h3>
 							<p className="text-gray-400 mb-6">{project.description}</p>
