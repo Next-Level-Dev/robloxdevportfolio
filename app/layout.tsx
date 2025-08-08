@@ -99,7 +99,7 @@ export default function RootLayout({
                 'linear-gradient(180deg, transparent, white 30%, white 70%, transparent), linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
               WebkitMaskImage:
                 'linear-gradient(180deg, transparent, white 30%, white 70%, transparent), linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
-              backgroundColor: 'white',
+              backgroundColor: '#1a1a1a',
             }}
           />
         </div>
