@@ -143,6 +143,8 @@ export default function SkillMetrics() {
 					</div>
 				</div>
 			</div>
+
+             <div className="w-full border-t border-gray-700 mt-12" />
 		</section>
 	);
 }
