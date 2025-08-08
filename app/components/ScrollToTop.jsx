@@ -9,7 +9,7 @@ export default function ScrollToTop() {
     // Use a short timeout to run after browser's default scroll restore
     const timeout = setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 250); // 50ms delay, you can tweak this if needed
+    }, 350); // 50ms delay, you can tweak this if needed
 
     return () => clearTimeout(timeout);
   }, [pathname]);
