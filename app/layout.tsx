@@ -89,20 +89,11 @@ export default function RootLayout({
             className="absolute inset-0 bg-[url('/grid2.svg')] bg-center opacity-40"
             style={{
               backgroundSize: '15% 15%',
-              filter: 'blur(4px)',
+              filter: 'blur(2px)',
             }}
           />
           {/* Two linear gradients mask overlay for rectangular fade */}
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              maskImage:
-                'linear-gradient(to bottom, transparent, white 60%, white 85%, transparent), linear-gradient(to right, transparent, white 40%, white 60%, transparent)',
-              WebkitMaskImage:
-                'linear-gradient(to bottom, transparent, white 60%, white 85%, transparent), linear-gradient(to right, transparent, white 40%, white 60%, transparent)',
-              backgroundColor: '#1a1a1a',
-            }}
-          />
+          <div className="absolute inset-0 pointer-events-none"/>
         </div>
 
         {/* Center page content vertically */}
