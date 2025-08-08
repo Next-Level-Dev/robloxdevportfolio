@@ -73,25 +73,36 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
       >
-        {/* Grid background */}
-        <div
-          className="fixed inset-0 -z-10 bg-[url('/grid2.svg')] bg-center opacity-10"
-          style={{
-            backgroundSize: '25% 25%',
-            maskImage:
-              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent), linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
-            WebkitMaskImage:
-              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent), linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
-          }}
-        />
+        {/* Background grid + mask + blur */}
+        <div className="fixed inset-0 -z-10">
+          {/* Grid background with blur */}
+          <div
+            className="absolute inset-0 bg-[url('/grid2.svg')] bg-center opacity-10"
+            style={{
+              backgroundSize: '15% 15%',
+              filter: 'blur(4px)',
+            }}
+          />
+          {/* Gradient mask overlay */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              maskImage:
+                'linear-gradient(180deg, transparent, white 30%, white 70%, transparent), linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
+              WebkitMaskImage:
+                'linear-gradient(180deg, transparent, white 30%, white 70%, transparent), linear-gradient(360deg, transparent, white 30%, white 70%, transparent)',
+              backgroundColor: 'white',
+            }}
+          />
+        </div>
 
         {/* Center page content vertically */}
         <main className="min-h-screen flex flex-col justify-center">
