@@ -84,13 +84,12 @@ export default function RootLayout({
         {/* Grid background */}
         <div
           className="fixed inset-0 -z-10 bg-[url('/pattern.svg')] bg-center bg-repeat opacity-10"
-          style={{
-            backgroundSize: '25% 25%',
-            maskImage:
-              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
-            WebkitMaskImage:
-              'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
-          }}
+            style={{
+              backgroundSize: '5% 5%',
+              backgroundRepeat: 'repeat',
+              maskImage: 'radial-gradient(circle at center, white 0%, white 40%, transparent 70%)',
+              WebkitMaskImage: 'radial-gradient(circle at center, white 0%, white 40%, transparent 70%)',
+            }}
         />
 
         {/* Center page content vertically */}
@@ -99,7 +98,7 @@ export default function RootLayout({
         </main>
 
         {/* Bottom border line */}
-        <div className="w-full border-t border-gray-700 mt-12" />
+        <div className="w-full border-t border-white-700 mt-5" />
       </body>
     </html>
   );
