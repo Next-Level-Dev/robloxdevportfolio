@@ -81,9 +81,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
       >
-        {/* Global grid background with top & bottom fade */}
+        {/* Grid background */}
         <div
-          className="fixed inset-0 -z-10 bg-[url('/grid2.svg')] bg-center bg-repeat opacity-10"
+          className="fixed inset-0 -z-10 bg-[url('/pattern.svg')] bg-center bg-repeat opacity-10"
           style={{
             backgroundSize: '25% 25%',
             maskImage:
@@ -92,7 +92,14 @@ export default function RootLayout({
               'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
           }}
         />
-        {children}
+
+        {/* Center page content vertically */}
+        <main className="min-h-screen flex flex-col justify-center">
+          {children}
+        </main>
+
+        {/* Bottom border line */}
+        <div className="w-full border-t border-gray-700 mt-12" />
       </body>
     </html>
   );
