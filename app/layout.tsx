@@ -85,6 +85,7 @@ export default function RootLayout({
         <div
           className="fixed inset-0 -z-10 bg-[url('/grid2.svg')] bg-center bg-repeat opacity-10"
           style={{
+            backgroundSize: '25% 25%',
             maskImage:
               'linear-gradient(180deg, transparent, white 30%, white 70%, transparent)',
             WebkitMaskImage:
