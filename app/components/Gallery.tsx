@@ -1,13 +1,13 @@
-'use client';
-import Image from 'next/image';
-import React, { useState } from 'react';
+"use client";
+import Image from "next/image";
+import React, { useState } from "react";
 
 const images = [
-  'https://i.postimg.cc/YS9KPR8N/Untitled-design.png',
-  'https://i.postimg.cc/PqWHyxx6/image.png',
-  'https://i.postimg.cc/YS9KPR8N/Untitled-design.png',
-  'https://i.postimg.cc/PqWHyxx6/image.png',
-  'https://i.postimg.cc/YS9KPR8N/Untitled-design.png',
+  "https://i.postimg.cc/YS9KPR8N/Untitled-design.png",
+  "https://i.postimg.cc/PqWHyxx6/image.png",
+  "https://i.postimg.cc/YS9KPR8N/Untitled-design.png",
+  "https://i.postimg.cc/PqWHyxx6/image.png",
+  "https://i.postimg.cc/YS9KPR8N/Untitled-design.png",
 ];
 
 export default function Gallery() {
@@ -21,12 +21,11 @@ export default function Gallery() {
       <section className="py-20 px-15 max-w-12xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-5">Image Gallery</h2>
 
-        {/* 2 images per row on all screen sizes */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
           {images.map((url, index) => (
             <div
               key={index}
-              className="relative w-full aspect-video rounded-md overflow-hidden shadow-md cursor-pointer"
+              className="relative w-full aspect-video rounded-md overflow-hidden shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-105"
               onClick={() => openImage(url)}
             >
               <Image
@@ -34,7 +33,7 @@ export default function Gallery() {
                 alt={`Gallery image ${index + 1}`}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: "cover" }}
                 priority={index === 0}
                 unoptimized={false}
               />
@@ -52,7 +51,7 @@ export default function Gallery() {
           <img
             src={selectedImg}
             alt="Full view"
-            className="max-w-full max-h-full rounded-md shadow-lg"
+            className="max-w-[90vw] max-h-[90vh] rounded-md shadow-lg object-contain"
           />
         </div>
       )}
