@@ -9,6 +9,9 @@ export default function PageWrapper({ children }: { children: ReactNode }) {
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {
@@ -22,11 +25,23 @@ export default function PageWrapper({ children }: { children: ReactNode }) {
         }
       },
       {
-        threshold: 0.3, // trigger when 30% visible
+        threshold: 0,
+        rootMargin: "0px 0px -100px 0px",
       }
     );
 
-    if (ref.current) observer.observe(ref.current);
+    observer.observe(el);
+
+    // Fallback: If element is already in viewport (rare), trigger immediately
+    if (el.getBoundingClientRect().top < window.innerHeight && !hasAnimated) {
+      controls.start({
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: "easeOut" },
+      });
+      setHasAnimated(true);
+      observer.disconnect();
+    }
 
     return () => observer.disconnect();
   }, [controls, hasAnimated]);
