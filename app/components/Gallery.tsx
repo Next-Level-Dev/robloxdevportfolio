@@ -3,11 +3,13 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 const images = [
-  "https://i.postimg.cc/YS9KPR8N/Untitled-design.png",
-  "https://i.postimg.cc/PqWHyxx6/image.png",
-  "https://i.postimg.cc/YS9KPR8N/Untitled-design.png",
-  "https://i.postimg.cc/PqWHyxx6/image.png",
-  "https://i.postimg.cc/YS9KPR8N/Untitled-design.png",
+    "https://i.postimg.cc/jdMBC0FF/0FEYrPF.webp",
+    "https://i.postimg.cc/3RQczKkd/1isriyN.webp",
+    "https://i.postimg.cc/65WD95YZ/3Ctbn64.webp",
+    "https://i.postimg.cc/Vk5pCZyL/J6DfRVj.webp",
+    "https://i.postimg.cc/Pqw76Lrg/lMISKLq.webp",
+    "https://i.postimg.cc/RZ88Q191/TCSTL0E.webp",
+    "https://i.postimg.cc/gJKN539T/SidKKh6.webp",
 ];
 
 export default function Gallery() {
