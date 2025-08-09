@@ -11,21 +11,26 @@ export default function BackendPortfolio() {
 	return (
 		<main className="min-h-screen text-white overflow-x-hidden scroll-smooth">
 			<Navbar />
+            
 			<section id="Hero">
 				<HeroSection />
 			</section>
+
 			<section id="Experience">
 				<Experience />
 			</section>
+
 			<section id="Skills">
 				<Skills />
 			</section>
-			<section id="Gallery">
-				<Gallery />
-			</section>
+
 			<section id="Contact">
 				<Contact />
 			</section>
+
+            <section id="Gallery">
+                <Gallery />
+            </section>
 		</main>
 	);
 }
