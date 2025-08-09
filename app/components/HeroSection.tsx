@@ -10,7 +10,7 @@ export default function HeroSection() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="bg-black/50 backdrop-blur-lg rounded-lg border border-gray-800 p-6"
+                    className="bg-black/50 backdrop-blur-lg rounded-full border border-gray-800 p-6"
                 >
                     <div className="flex items-center gap-2 mb-4">
                         <div className="w-3 h-3 rounded-full bg-red-500" />
