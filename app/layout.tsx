@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import HashCleaner from './components/HashCleaner';
 import ScrollToTop from './components/ScrollToTop';
+import PageWrapper from "./components/PageWrapper";
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -93,18 +94,18 @@ export default function RootLayout({
             className="absolute inset-0 pointer-events-none"
             style={{
               maskImage:
-                'linear-gradient(to top, white, transparent 40%, transparent 60%, white), linear-gradient(to right, white, transparent 40%, transparent 60%, white)',
+                "linear-gradient(to top, white, transparent 40%, transparent 60%, white), linear-gradient(to right, white, transparent 40%, transparent 60%, white)",
               WebkitMaskImage:
-                'linear-gradient(to top, white, transparent 40%, transparent 60%, white), linear-gradient(to right, white, transparent 40%, transparent 60%, white)',
-              backgroundColor: '#1a1a1a',
+                "linear-gradient(to top, white, transparent 40%, transparent 60%, white), linear-gradient(to right, white, transparent 40%, transparent 60%, white)",
+              backgroundColor: "#1a1a1a",
             }}
           />
         </div>
 
         <main className="min-h-screen flex flex-col justify-center">
-            <HashCleaner />
-            <ScrollToTop />
-            <div className="animated-text">{children}</div>
+          <HashCleaner />
+          <ScrollToTop />
+          <PageWrapper>{children}</PageWrapper>
         </main>
       </body>
     </html>
