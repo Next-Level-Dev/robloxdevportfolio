@@ -10,6 +10,8 @@ const images = [
     "https://i.postimg.cc/Pqw76Lrg/lMISKLq.webp",
     "https://i.postimg.cc/RZ88Q191/TCSTL0E.webp",
     "https://i.postimg.cc/gJKN539T/SidKKh6.webp",
+    "https://i.postimg.cc/PqWHyxx6/image.png",
+    "https://i.postimg.cc/3wXB42wx/image.png",
 ];
 
 export default function Gallery() {
