@@ -4,8 +4,7 @@ import './globals.css';
 import HashCleaner from './components/HashCleaner';
 import ScrollToTop from './components/ScrollToTop';
 import PageWrapper from "./components/PageWrapper";
-import { ReactNode } from "react";
-import { motion } from "framer-motion";
+import AnimatedBackground from './components/AnimatedBackground'; // import client component
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -89,11 +88,7 @@ export default function RootLayout({
       >
         {/* Background grid + mask + blur */}
         <div className="fixed inset-0 -z-10">
-          <motion.div
-            className="absolute inset-0 bg-[url('/grid2.svg')] bg-repeat opacity-40"
-            animate={{ backgroundPosition: ["0 0", "100px 100px"] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-          />
+          <AnimatedBackground />
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
