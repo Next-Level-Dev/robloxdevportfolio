@@ -104,7 +104,7 @@ export default function RootLayout({
         <main className="min-h-screen flex flex-col justify-center">
             <HashCleaner />
             <ScrollToTop />
-            {children}
+            <div className="animated-text">{children}</div>
         </main>
       </body>
     </html>

@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 body {
 	background-color: #1a1a1a;
 }
 
 html {
 	scroll-behavior: smooth;
+}
+
+.animated-text {
+  animation: fadeUp 0.5s ease forwards;
 }
