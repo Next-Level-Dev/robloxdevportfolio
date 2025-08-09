@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fadeUp {
-  0% { opacity: 0; transform: translateY(10px); }
-  100% { opacity: 1; transform: translateY(0); }
+@keyframes crazyTestAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.5) rotate(-15deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1.1) rotate(15deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
 }
 
 body {
@@ -15,6 +25,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-.animated-text {
-  animation: fadeUp 0.5s ease forwards;
+.animated-text * {
+  animation: crazyTestAnimation 1s ease-in-out forwards;
 }
