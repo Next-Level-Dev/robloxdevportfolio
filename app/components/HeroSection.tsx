@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 export default function HeroSection() {
     return (
         <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden -mb-4">
-            <div className="relative z-8 max-w-4xl w-full mx-4 backdrop-blur-lg border border-gray-800 bg-gradient-to-r from-green-500/5 to-blue-500/5">
+            <div className="relative z-8 max-w-4xl w-full mx-4 backdrop-blur-lg rounded-lg border border-gray-800 bg-gradient-to-r from-green-500/5 to-blue-500/5">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="bg-black/50 backdrop-blur-lg rounded-full border border-gray-800 p-6"
+                    className="bg-black/50 backdrop-blur-lg rounded-lg border border-gray-800 p-6"
                 >
                     <div className="flex items-center gap-2 mb-4">
                         <div className="w-3 h-3 rounded-full bg-red-500" />
