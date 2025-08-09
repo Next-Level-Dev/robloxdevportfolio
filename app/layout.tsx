@@ -104,8 +104,8 @@ export default function RootLayout({
 
         <main className="min-h-screen flex flex-col justify-center">
           <HashCleaner />
-          <ScrollToTop />
           <PageWrapper>{children}</PageWrapper>
+          <ScrollToTop />
         </main>
       </body>
     </html>

@@ -2,29 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes crazyTestAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(50px) scale(0.5) rotate(-15deg);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(-20px) scale(1.1) rotate(15deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1) rotate(0deg);
-  }
-}
-
 body {
 	background-color: #1a1a1a;
 }
 
 html {
 	scroll-behavior: smooth;
-}
-
-.animated-text * {
-  animation: crazyTestAnimation 1s ease-in-out forwards !important;
 }
