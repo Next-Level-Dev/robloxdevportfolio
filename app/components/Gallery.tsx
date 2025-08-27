@@ -35,7 +35,7 @@ export default function Gallery() {
               key={index}
               className="relative w-full aspect-video rounded-md overflow-hidden shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-105"
             >
-              <iframe src={url} allowfullscreen />
+              <iframe src={url} allow="fullscreen" />
             </div>
 
           {images.map((url, index) => (
