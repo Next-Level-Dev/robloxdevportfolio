@@ -4,6 +4,11 @@ import React, { useState } from "react";
 
 const videos = [
     "https://www.youtube-nocookie.com/embed/VH4wPgpYTZ0?si=lYG6xx8jnhbUD0id",
+    "https://www.youtube.com/embed/TLdXhgJaGBI?si=gGVJhUDWvCxLl84k",
+    "https://www.youtube.com/embed/-UMbxMkiah8?si=YUFy3nW4qFEp53N7",
+    "https://www.youtube.com/embed/799tIKoIsEg?si=PRmu4E2vQIbrW-iU",
+    "https://www.youtube.com/embed/AodhHwG8K4Y?si=Fju7JhOlOL1LyRbf",
+    "https://www.youtube.com/embed/9L7PjkNgnB4?si=ZmBK4T4F7YfbFSCI",
 ];
 
 const images = [
