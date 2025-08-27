@@ -26,7 +26,7 @@ export default function Gallery() {
         <h2 className="text-3xl font-bold text-center mb-8">Image Gallery</h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-4">
-           <iframe src="https://www.youtube-nocookie.com/embed/VH4wPgpYTZ0?si=lYG6xx8jnhbUD0id" />
+           <iframe src="https://www.youtube-nocookie.com/embed/VH4wPgpYTZ0?si=lYG6xx8jnhbUD0id" allowfullscreen />
 
           {images.map((url, index) => (
             <div
