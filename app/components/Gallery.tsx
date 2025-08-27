@@ -2,6 +2,10 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
+const videos = [
+    "https://www.youtube-nocookie.com/embed/VH4wPgpYTZ0?si=lYG6xx8jnhbUD0id",
+];
+
 const images = [
     "https://i.postimg.cc/jdMBC0FF/0FEYrPF.webp",
     "https://i.postimg.cc/3RQczKkd/1isriyN.webp",
@@ -26,11 +30,17 @@ export default function Gallery() {
         <h2 className="text-3xl font-bold text-center mb-8">Image Gallery</h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-4">
-           <iframe src="https://www.youtube-nocookie.com/embed/VH4wPgpYTZ0?si=lYG6xx8jnhbUD0id" allowfullscreen />
+           {videos.map((url, index) => (
+            <div
+              key={index}
+              className="relative w-full aspect-video rounded-md overflow-hidden shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-105"
+            >
+              <iframe src={url} allowfullscreen />
+            </div>
 
           {images.map((url, index) => (
             <div
-              key={index}
+              key={index+35}
               className="relative w-full aspect-video rounded-md overflow-hidden shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-105"
               onClick={() => openImage(url)}
             >
