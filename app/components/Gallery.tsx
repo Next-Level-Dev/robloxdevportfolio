@@ -37,6 +37,7 @@ export default function Gallery() {
             >
               <iframe src={url} allow="fullscreen" />
             </div>
+        ))}
 
           {images.map((url, index) => (
             <div
