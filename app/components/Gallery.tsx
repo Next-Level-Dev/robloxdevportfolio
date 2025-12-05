@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { portfolioConfig } from "../portfolio.config";
 
 export default function Gallery() {
-  const { videos, images } = portfolioConfig.gallery;
+  const { videos, images, altText } = portfolioConfig.gallery;
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
   const openImage = (url: string) => setSelectedImg(url);
@@ -33,7 +33,7 @@ export default function Gallery() {
             >
               <Image
                 src={url}
-                alt={`Gallery image ${index + 1}`}
+                alt={`${altText} ${index + 1}`}
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 style={{ objectFit: "cover" }}

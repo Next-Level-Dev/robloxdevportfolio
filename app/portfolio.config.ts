@@ -79,6 +79,9 @@ export const portfolioConfig = {
       contactEmail: "$ contact --email",
       contactResume: "$ cat resume.pdf",
       contactSocials: "$ ls ./social-links",
+    },
+    assets: {
+      gridBackground: "/grid2.svg",
     }
   },
   navbar: {
@@ -225,6 +228,8 @@ export const portfolioConfig = {
   contact: {
     location: 'Turkiye',
     email: 'utku.businessemail@gmail.com',
+    emailSubject: 'Project Inquiry',
+    emailBody: 'Hi, I would like to discuss a project with you.',
     resumeUrl: '/dinker-resume.pdf',
     socials: {
       roblox: {
@@ -245,6 +250,7 @@ export const portfolioConfig = {
     },
   },
   gallery: {
+    altText: "Gallery image",
     videos: [
       'https://www.youtube-nocookie.com/embed/VH4wPgpYTZ0?si=lYG6xx8jnhbUD0id',
       'https://www.youtube.com/embed/TLdXhgJaGBI?si=gGVJhUDWvCxLl84k',

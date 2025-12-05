@@ -41,7 +41,7 @@ export default function ContactSection() {
 							</div>
 							<p className="text-green-500 mt-8 mb-2">{ui.commands.contactEmail}</p>
 							<motion.a
-								href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}&su=Subject&body=Body`}
+								href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}&su=${encodeURIComponent(contact.emailSubject)}&body=${encodeURIComponent(contact.emailBody)}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
 								whileHover={{ scale: 1.02 }}
