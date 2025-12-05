@@ -6,6 +6,7 @@ import HashCleaner from './components/HashCleaner';
 import ScrollToTop from './components/ScrollToTop';
 import PageWrapper from "./components/PageWrapper";
 import AnimatedBackground from './components/AnimatedBackground'; // import client component
+import { portfolioConfig } from './portfolio.config';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -17,65 +18,7 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = {
-  title: '[Dinker] - Roblox Developer',
-  description:
-    'Welcome to my portfolio! I am a passionate backend developer specializing in building scalable server architectures, robust APIs, and high-performance distributed systems. With expertise in cloud infrastructure and database optimization, I create efficient and reliable backend solutions.',
-  keywords: [
-    'Studio UI Designer',
-    'Luau',
-    'Lua',
-    'Roblox Programming',
-    'Development',
-    'Roblox Developer',
-    'Gui Designer',
-    'Roblox Studio',
-    '[Dinker]',
-    'Node.js',
-    'Python',
-    'Roblox',
-    'Systems',
-    'Studio',
-    'Programmer',
-  ],
-  authors: [{ name: '[Dinker]' }],
-  creator: '[Dinker]',
-  openGraph: {
-    title: '[Dinker] - Roblox Developer Portfolio',
-    description: 'Roblox developer for the past 7 years.',
-    url: 'https://robloxdevportfolio.vercel.app/',
-    siteName: '[Dinker] - Portfolio',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 1024,
-        alt: '[Dinker] - Roblox Developer Portfolio',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: '[Dinker] - Roblox Developer',
-    description:
-      'Passionate roblox developer producing modular and clean code and designing user interfaces.',
-    creator: '@[NO ACCOUNT]',
-    images: ['/og-image.jpg'],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-};
+export const metadata: Metadata = portfolioConfig.metadata;
 
 export default function RootLayout({
   children,

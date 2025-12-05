@@ -1,8 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { portfolioConfig } from '../portfolio.config';
 
 export default function ContactSection() {
+    const { contact } = portfolioConfig;
+    
 	return (
 		<section className="py-20 px-4">
 
@@ -35,21 +38,21 @@ export default function ContactSection() {
 									/>
 									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
 								</svg>
-								<span>Turkiye</span>
+								<span>{contact.location}</span>
 							</div>
 							<p className="text-green-500 mt-8 mb-2">$ contact --email</p>
 							<motion.a
-								href="https://mail.google.com/mail/?view=cm&fs=1&to=utku.businessemail@gmail.com&su=Subject&body=Body"
+								href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}&su=Subject&body=Body`}
                                 target="_blank"
                                 rel="noopener noreferrer"
 								whileHover={{ scale: 1.02 }}
 								className="inline-block px-6 py-3 bg-green-500/10 text-green-400 rounded-lg border border-green-500/20 hover:bg-green-500/20 transition-colors"
 							>
-								utku.businessemail@gmail.com
+								{contact.email}
 							</motion.a>
 							<p className="text-green-500 mt-8 mb-2">$ cat resume.pdf</p>
 							<motion.a
-								href="/dinker-resume.pdf"
+								href={contact.resumeUrl}
 								target="_blank"
 								rel="noopener noreferrer"
 								whileHover={{ scale: 1.02 }}
@@ -63,7 +66,7 @@ export default function ContactSection() {
 							<p className="text-green-500 mt-8 mb-4">$ ls ./social-links</p>
 							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 								<motion.a
-									href="https://www.roblox.com/users/5078913285/profile"
+									href={contact.socials.roblox.url}
 									whileHover={{ scale: 1.05 }}
 									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
 								>
@@ -73,12 +76,12 @@ export default function ContactSection() {
 										</svg>
 									</div>
 									<div>
-										<p className="font-semibold text-gray-200">Roblox</p>
-										<p className="text-sm text-gray-400">NextLevel_Dev</p>
+										<p className="font-semibold text-gray-200">{contact.socials.roblox.name}</p>
+										<p className="text-sm text-gray-400">{contact.socials.roblox.handle}</p>
 									</div>
 								</motion.a>
 								<motion.a
-									href="https://www.linkedin.com/in/utku-%C3%BCnal-686851320/"
+									href={contact.socials.linkedin.url}
 									whileHover={{ scale: 1.05 }}
 									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
 								>
@@ -88,12 +91,12 @@ export default function ContactSection() {
 										</svg>
 									</div>
 									<div>
-										<p className="font-semibold text-gray-200">LinkedIn</p>
-										<p className="text-sm text-gray-400">Utku Ünal</p>
+										<p className="font-semibold text-gray-200">{contact.socials.linkedin.name}</p>
+										<p className="text-sm text-gray-400">{contact.socials.linkedin.handle}</p>
 									</div>
 								</motion.a>
 								<motion.a
-									href="https://discord.gg/2TMEhUkRD6"
+									href={contact.socials.discord.url}
 									whileHover={{ scale: 1.05 }}
 									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
 								>
@@ -103,8 +106,8 @@ export default function ContactSection() {
 										</svg>
 									</div>
 									<div>
-										<p className="font-semibold text-gray-200">Discord</p>
-										<p className="text-sm text-gray-400">.dinker.</p>
+										<p className="font-semibold text-gray-200">{contact.socials.discord.name}</p>
+										<p className="text-sm text-gray-400">{contact.socials.discord.handle}</p>
 									</div>
 								</motion.a>
 							</div>

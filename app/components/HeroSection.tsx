@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { portfolioConfig } from '../portfolio.config';
 
 export default function HeroSection() {
     return (
@@ -19,15 +20,15 @@ export default function HeroSection() {
                     </div>
                     <div className="font-mono">
                         <p className="text-green-500">$ whoami</p>
-                        <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">Dinker</h1>
-                        <p className="text-gray-400 mb-4">Experienced Luau Scripter and Roblox User Interface Designer</p>
+                        <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">{portfolioConfig.hero.title}</h1>
+                        <p className="text-gray-400 mb-4">{portfolioConfig.hero.subtitle}</p>
                         <p className="text-green-500">$ skills</p>
                         <div className="flex flex-wrap gap-2 mt-2">
-                            <span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Luau/Lua Professional Programming</span>
-                            <span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Python Intermediate Programming</span>
-                            <span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Roblox GUI Design</span>
-                            <span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Game Testing And Profiling</span>
-                            <span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Content Analysis And Planning</span>
+                            {portfolioConfig.hero.skills.map((skill, index) => (
+                                <span key={index} className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">
+                                    {skill}
+                                </span>
+                            ))}
                         </div>
                     </div>
                 </motion.div>

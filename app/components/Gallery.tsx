@@ -1,29 +1,10 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-
-const videos = [
-    "https://www.youtube-nocookie.com/embed/VH4wPgpYTZ0?si=lYG6xx8jnhbUD0id",
-    "https://www.youtube.com/embed/TLdXhgJaGBI?si=gGVJhUDWvCxLl84k",
-    "https://www.youtube.com/embed/-UMbxMkiah8?si=YUFy3nW4qFEp53N7",
-    "https://www.youtube.com/embed/799tIKoIsEg?si=PRmu4E2vQIbrW-iU",
-    "https://www.youtube.com/embed/AodhHwG8K4Y?si=Fju7JhOlOL1LyRbf",
-    "https://www.youtube.com/embed/9L7PjkNgnB4?si=ZmBK4T4F7YfbFSCI",
-];
-
-const images = [
-    "https://i.postimg.cc/jdMBC0FF/0FEYrPF.webp",
-    "https://i.postimg.cc/3RQczKkd/1isriyN.webp",
-    "https://i.postimg.cc/65WD95YZ/3Ctbn64.webp",
-    "https://i.postimg.cc/Vk5pCZyL/J6DfRVj.webp",
-    "https://i.postimg.cc/Pqw76Lrg/lMISKLq.webp",
-    "https://i.postimg.cc/RZ88Q191/TCSTL0E.webp",
-    "https://i.postimg.cc/gJKN539T/SidKKh6.webp",
-    "https://i.postimg.cc/PqWHyxx6/image.png",
-    "https://i.postimg.cc/3wXB42wx/image.png",
-];
+import { portfolioConfig } from "../portfolio.config";
 
 export default function Gallery() {
+  const { videos, images } = portfolioConfig.gallery;
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
   const openImage = (url: string) => setSelectedImg(url);
@@ -40,13 +21,13 @@ export default function Gallery() {
               key={index}
               className="relative w-full aspect-video rounded-md overflow-hidden shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-105"
             >
-              <iframe src={url} allow="fullscreen" />
+              <iframe src={url} allow="fullscreen" className="w-full h-full" />
             </div>
         ))}
 
           {images.map((url, index) => (
             <div
-              key={index+35}
+              key={index+videos.length}
               className="relative w-full aspect-video rounded-md overflow-hidden shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-105"
               onClick={() => openImage(url)}
             >
@@ -75,6 +56,8 @@ export default function Gallery() {
             alt="Full view"
             className="max-w-[90vw] max-h-[90vh] rounded-md shadow-lg object-contain"
             draggable={false}
+            width={1200}
+            height={800}
           />
         </div>
       )}

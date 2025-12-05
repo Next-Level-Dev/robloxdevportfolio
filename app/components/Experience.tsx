@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { portfolioConfig } from '../portfolio.config';
 
 export default function Experience() {
 	return (
@@ -11,45 +12,7 @@ export default function Experience() {
 				</motion.h2>
 
 				<div className="grid grid-cols-1 gap-8">
-					{[
-						{
-							title: 'A Cancelled Project That I Was Commissioned For',
-							description: '%90 of the full development work was on me.',
-							details: [
-								'Coded interaction and physics based items',
-								'Implemented custom physical currency systems',
-								'Designed and coded simple user interfaces',
-								'Added ragdoll mechanics',
-								'Cleaned and bug-fixed previous code',
-							],
-							tech: ['Luau', 'UI'],
-						},
-						{
-							title: 'Another Recent Project',
-							description: 'I was hired for bug-fixes and improvements.',
-							details: [
-								'Implemented data based global leaderboards that update realtime',
-								'Edited some animations for speed changes and ownership issues',
-								'Created awesome guis for the leaderboards',
-								'Fixed bugs with the combat system',
-							],
-							tech: ['Luau', 'UI', 'Animation'],
-						},
-									{
-							title: 'Experience Timeline',
-							description: 'older experience that hasnt been documented',
-							details: [
-								'1st year - Spent trying game engines and learning roblox',
-								'2nd year - Spent learning luau',
-								'3rd year - Spent with solo projects and self teaching',
-								'4th year - Spent taking various small commissions',
-								'5th year - Spent taking full commisions (also gave luau courses)',
-								'6th year - burn out',
-								'7th year - Spent taking full commissions (still going on)',
-							],
-							tech: ['Luau', 'UI', 'Animation', 'Learning', 'Tutor', 'Game Testing'],
-						},
-					].map((project, index) => (
+					{portfolioConfig.experience.map((project, index) => (
 						<motion.div
 							key={index}
 							initial={{ opacity: 0, y: 20 }}
