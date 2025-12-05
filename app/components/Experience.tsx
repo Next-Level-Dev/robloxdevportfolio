@@ -8,7 +8,7 @@ export default function Experience() {
 		<section className="py-20 px-4">
 			<div className="max-w-6xl mx-auto">
 				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold mb-8 text-center">
-					Experience & Projects
+					{portfolioConfig.ui.sectionTitles.experience}
 				</motion.h2>
 
 				<div className="grid grid-cols-1 gap-8">
@@ -24,7 +24,7 @@ export default function Experience() {
 							<h3 className="text-2xl font-bold mb-4">{project.title}</h3>
 							<p className="text-gray-400 mb-6">{project.description}</p>
 							<div className="mb-6">
-								<h4 className="text-lg font-semibold mb-2">Key Achievements:</h4>
+								<h4 className="text-lg font-semibold mb-2">{portfolioConfig.ui.labels.keyAchievements}</h4>
 								<ul className="list-disc list-inside space-y-2 text-gray-300">
 									{project.details.map((detail, i) => (
 										<li key={i}>{detail}</li>

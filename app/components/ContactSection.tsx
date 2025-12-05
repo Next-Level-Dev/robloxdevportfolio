@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { portfolioConfig } from '../portfolio.config';
 
 export default function ContactSection() {
-    const { contact } = portfolioConfig;
+    const { contact, ui } = portfolioConfig;
     
 	return (
 		<section className="py-20 px-4">
@@ -14,7 +14,6 @@ export default function ContactSection() {
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
 					viewport={{ once: true }}
-					//className="relative p-8 rounded-2xl overflow-hidden backdrop-blur-lg border border-gray-800 bg-black/50"
                     className="relative p-8 rounded-2xl overflow-hidden backdrop-blur-lg border border-gray-800"
 				>
                     <div className="absolute inset-0 bg-gradient-to-r from-green-500/5 to-blue-500/5" />
@@ -25,9 +24,9 @@ export default function ContactSection() {
 							<div className="w-3 h-3 rounded-full bg-green-500" />
 						</div>
 						<div className="font-mono">
-							<p className="text-green-500 mb-2">$ contact --info</p>
-							<h2 className="text-3xl font-bold mb-8 text-gray-200">Let&apos;s Connect</h2>
-							<p className="text-green-500 mb-2">$ location --current</p>
+							<p className="text-green-500 mb-2">{ui.commands.contactInfo}</p>
+							<h2 className="text-3xl font-bold mb-8 text-gray-200">{ui.sectionTitles.contact}</h2>
+							<p className="text-green-500 mb-2">{ui.commands.contactLocation}</p>
 							<div className="flex items-center gap-2 text-gray-300">
 								<svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path
@@ -40,7 +39,7 @@ export default function ContactSection() {
 								</svg>
 								<span>{contact.location}</span>
 							</div>
-							<p className="text-green-500 mt-8 mb-2">$ contact --email</p>
+							<p className="text-green-500 mt-8 mb-2">{ui.commands.contactEmail}</p>
 							<motion.a
 								href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}&su=Subject&body=Body`}
                                 target="_blank"
@@ -50,7 +49,7 @@ export default function ContactSection() {
 							>
 								{contact.email}
 							</motion.a>
-							<p className="text-green-500 mt-8 mb-2">$ cat resume.pdf</p>
+							<p className="text-green-500 mt-8 mb-2">{ui.commands.contactResume}</p>
 							<motion.a
 								href={contact.resumeUrl}
 								target="_blank"
@@ -61,9 +60,9 @@ export default function ContactSection() {
 								<svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
 									<path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" />
 								</svg>
-								<span>PRIVATE FOR NOW</span>
+								<span>{ui.labels.resumeButton}</span>
 							</motion.a>
-							<p className="text-green-500 mt-8 mb-4">$ ls ./social-links</p>
+							<p className="text-green-500 mt-8 mb-4">{ui.commands.contactSocials}</p>
 							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 								<motion.a
 									href={contact.socials.roblox.url}

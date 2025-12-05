@@ -19,10 +19,10 @@ export default function HeroSection() {
                         <div className="w-3 h-3 rounded-full bg-green-500" />
                     </div>
                     <div className="font-mono">
-                        <p className="text-green-500">$ whoami</p>
+                        <p className="text-green-500">{portfolioConfig.ui.commands.heroWhoami}</p>
                         <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">{portfolioConfig.hero.title}</h1>
                         <p className="text-gray-400 mb-4">{portfolioConfig.hero.subtitle}</p>
-                        <p className="text-green-500">$ skills</p>
+                        <p className="text-green-500">{portfolioConfig.ui.commands.heroSkills}</p>
                         <div className="flex flex-wrap gap-2 mt-2">
                             {portfolioConfig.hero.skills.map((skill, index) => (
                                 <span key={index} className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">

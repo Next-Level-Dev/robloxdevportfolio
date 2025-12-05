@@ -60,6 +60,27 @@ export const portfolioConfig = {
       },
     },
   } as Metadata,
+  ui: {
+    sectionTitles: {
+      experience: "Experience & Projects",
+      skills: "Practices, Achievements & Skills",
+      gallery: "Image Gallery",
+      contact: "Let's Connect",
+    },
+    labels: {
+      keyAchievements: "Key Achievements:",
+      resumeButton: "PRIVATE FOR NOW",
+    },
+    commands: {
+      heroWhoami: "$ whoami",
+      heroSkills: "$ skills",
+      contactInfo: "$ contact --info",
+      contactLocation: "$ location --current",
+      contactEmail: "$ contact --email",
+      contactResume: "$ cat resume.pdf",
+      contactSocials: "$ ls ./social-links",
+    }
+  },
   navbar: {
     title: "[Next Level's Portfolio For Roblox Development]",
     items: [

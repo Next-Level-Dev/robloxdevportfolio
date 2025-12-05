@@ -13,7 +13,7 @@ export default function Gallery() {
   return (
     <>
       <section className="py-20 px-6 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Image Gallery</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">{portfolioConfig.ui.sectionTitles.gallery}</h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-4">
            {videos.map((url, index) => (

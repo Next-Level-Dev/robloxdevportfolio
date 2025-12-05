@@ -8,7 +8,7 @@ export default function SkillMetrics() {
 		<section className="py-20 px-4">
 			<div className="max-w-6xl mx-auto">
 				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold mb-8 text-center">
-					Practices, Achievements & Skills
+					{portfolioConfig.ui.sectionTitles.skills}
 				</motion.h2>
 
 				<div className="grid grid-cols-1 gap-12">
